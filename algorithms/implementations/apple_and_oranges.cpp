@@ -10,7 +10,7 @@ static bool comp(int s, int t, int x) {
 }
 
 int main(){
-    std::out >> s >>t >> a >> b >> m >>n;
+    std::cin >> s >>t >> a >> b >> m >>n;
     dis1 =dis2 =0 ;
     while(m-->0){
         std::cin>> temp;
