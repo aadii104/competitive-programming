@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.vue": "html",
+        "*.ejs": "html",
+        "*.jsx": "javascriptreact",
+        "iostream": "cpp"
+    }
+}
