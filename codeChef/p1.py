@@ -25,11 +25,10 @@
 # The correct answer of 5858-1234 is 4624. So, for instance, 2624, 4324, 4623, 4604 and 4629 will be accepted,
 # but 0624, 624, 5858, 4624 and 04624 will be rejected.
 
-# MY SOLUTION:
 
-## This solution gives error in codechef as this consumes more memory
-
-# A, B = input().split()
-# result = list(str(int(A) - int(B)))
-# result[random.randint(0, 3)] = str(random.randint(0, 9))
-# print(int(''.join(result)))
+A, B = map(int, input().split())
+C = A - B
+if (A - B) % 10 == 9:
+    print(C - 1)
+else:
+     print(C + 1)
