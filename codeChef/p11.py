@@ -37,3 +37,15 @@
 #
 # Output:
 # NO
+
+numberOfMember = int(input())
+C = input().split()
+C = [int(i) for i in C]
+result = sum(C)
+check =0 
+for i in range(0, len(C)+1):
+    check+=1
+if check == result:
+    print('YES')
+else:
+    print('NO')

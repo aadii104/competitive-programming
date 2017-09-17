@@ -34,6 +34,20 @@
 tc = int(input())
 while tc:
     tc -= 1
-    n1 = input()
-    n2 = input()
+    M,W = map(str, input().split())
+    countM = 1
+    countW = 1
+    for i in M:
+        result = W.find(i)
+        if result == -1:
+            countM = 0
+            break
+    for i in W:
+        if result == -1:
+            countW = 0;
+            break
+    if(countM==1) or (countW ==1 ):
+        print('YES')
+    else:
+        print('NO')
     
