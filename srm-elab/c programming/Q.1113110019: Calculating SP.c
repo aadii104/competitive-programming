@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    if (a == 0 || b == 0)
+    {
+        printf("0");
+    }
+    else
+    {
+        printf("The selling price of the cycle is Rs=%.2f", (float)(a * (100 - b)) / 100);
+    }
+    return 0;
+}
